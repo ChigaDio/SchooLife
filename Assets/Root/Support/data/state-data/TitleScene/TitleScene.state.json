@@ -1,0 +1,425 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "LoadAssets",
+      "description": "ロード中",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "TitleStartAnimation",
+      "description": "タイトルのスタートアニメーション",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "TitleSelect",
+      "description": "タイトルのセレクト",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "GameStart",
+      "description": "ゲーム開始",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "Option",
+      "description": "オプション",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "Credit",
+      "description": "クレジット",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "UnLoadAssets",
+      "description": "",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "fromState": "Exit",
+      "description": "終了",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "data": {
+        "description": "タイトルのスタートアニメーション",
+        "label": "TitleStartAnimation",
+        "subNodes": [],
+        "targets": [
+          "2"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "1",
+      "measured": {
+        "height": 130,
+        "width": 150
+      },
+      "position": {
+        "x": 420,
+        "y": 240
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "タイトルのセレクト",
+        "label": "TitleSelect",
+        "subNodes": [],
+        "targets": [
+          "3",
+          "4",
+          "5",
+          "10"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "2",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 795,
+        "y": 255
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "ゲーム開始",
+        "label": "GameStart",
+        "subNodes": [],
+        "targets": [
+          "6"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "3",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 1185,
+        "y": 150
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "オプション",
+        "label": "Option",
+        "subNodes": [],
+        "targets": [
+          "2"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "4",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 1185,
+        "y": 300
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "クレジット",
+        "label": "Credit",
+        "subNodes": [],
+        "targets": [
+          "2"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "5",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 1185,
+        "y": 450
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "フェードアウト",
+        "label": "FadeOut",
+        "subNodes": [],
+        "targets": [
+          "9"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "6",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 1605,
+        "y": 135
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "ロード中",
+        "label": "LoadAssets",
+        "subNodes": [],
+        "targets": [
+          "8"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "7",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": -300,
+        "y": 255
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "フェードイン",
+        "label": "FadeIn",
+        "subNodes": [],
+        "targets": [
+          "1"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "8",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 60,
+        "y": 255
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "",
+        "label": "UnLoadAssets",
+        "subNodes": [],
+        "targets": []
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "9",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 2235,
+        "y": 30
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "終了",
+        "label": "Exit",
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeOut"
+          }
+        ],
+        "targets": []
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "10",
+      "measured": {
+        "height": 160,
+        "width": 150
+      },
+      "position": {
+        "x": 1200,
+        "y": 660
+      },
+      "selected": true,
+      "type": "default"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e2",
+      "source": "1",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e4",
+      "source": "2",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e5",
+      "source": "2",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e6",
+      "source": "4",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e7",
+      "source": "5",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e8",
+      "source": "3",
+      "target": "6",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e9",
+      "source": "7",
+      "target": "8",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e10",
+      "source": "8",
+      "target": "1",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e11",
+      "source": "6",
+      "target": "9",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e12",
+      "source": "2",
+      "target": "10",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    }
+  ]
+}

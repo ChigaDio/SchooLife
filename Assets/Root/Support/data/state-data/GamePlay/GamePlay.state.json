@@ -1,0 +1,520 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "SelectAction",
+      "description": "何を選択するか",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "Conduct",
+      "description": "行動",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "Date",
+      "description": "デート",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "GoodNight",
+      "description": "お休み",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "Event",
+      "description": "",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "Optin",
+      "description": "オプション",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "EventCheck",
+      "description": "イベントのチェック",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "fromState": "Save",
+      "description": "セーブします",
+      "variables": []
+    },
+    {
+      "id": 12,
+      "fromState": "FinishCheck",
+      "description": "終了判定",
+      "variables": []
+    },
+    {
+      "id": 13,
+      "fromState": "FinishExit",
+      "description": "終了",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -210,
+        "y": 300
+      },
+      "data": {
+        "label": "FadeIn",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "フェードイン"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 150,
+        "y": 300
+      },
+      "data": {
+        "label": "SelectAction",
+        "targets": [
+          "3",
+          "4",
+          "5",
+          "7",
+          "11"
+        ],
+        "subNodes": [],
+        "description": "何を選択するか"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 525,
+        "y": 105
+      },
+      "data": {
+        "label": "Conduct",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "行動"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 525,
+        "y": 300
+      },
+      "data": {
+        "label": "Date",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "デート"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 525,
+        "y": 480
+      },
+      "data": {
+        "label": "GoodNight",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "お休み"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 915,
+        "y": 345
+      },
+      "data": {
+        "label": "EventCheck",
+        "targets": [
+          "8",
+          "9"
+        ],
+        "subNodes": [],
+        "description": "イベントのチェック"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "7",
+      "type": "default",
+      "position": {
+        "x": 525,
+        "y": 615
+      },
+      "data": {
+        "label": "Optin",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "オプション"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "8",
+      "type": "default",
+      "position": {
+        "x": 1275,
+        "y": 180
+      },
+      "data": {
+        "label": "Event",
+        "targets": [
+          "9"
+        ],
+        "subNodes": [],
+        "description": ""
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "9",
+      "type": "default",
+      "position": {
+        "x": 1545,
+        "y": 360
+      },
+      "data": {
+        "label": "Save",
+        "targets": [
+          "10"
+        ],
+        "subNodes": [],
+        "description": "セーブします"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "10",
+      "type": "default",
+      "position": {
+        "x": 1770,
+        "y": 585
+      },
+      "data": {
+        "label": "FinishCheck",
+        "targets": [
+          "11",
+          "1"
+        ],
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeOut"
+          }
+        ],
+        "description": "終了判定"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 160
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "11",
+      "type": "default",
+      "position": {
+        "x": 570,
+        "y": 1035
+      },
+      "data": {
+        "label": "FinishExit",
+        "targets": [],
+        "subNodes": [],
+        "description": "終了"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "4",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "5",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "7",
+      "id": "e5"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "7",
+      "target": "2",
+      "id": "e6"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "6",
+      "id": "e7"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "6",
+      "id": "e8"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "6",
+      "id": "e9"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "6",
+      "target": "8",
+      "id": "e10"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "8",
+      "target": "9",
+      "id": "e11"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "6",
+      "target": "9",
+      "id": "e12"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "9",
+      "target": "10",
+      "id": "e13"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "10",
+      "target": "11",
+      "id": "e14"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "10",
+      "target": "1",
+      "id": "e15"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "11",
+      "id": "e16"
+    }
+  ]
+}

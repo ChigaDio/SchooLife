@@ -1,0 +1,20 @@
+[
+  {
+    "description": " 勉強",
+    "id": 1,
+    "property": "Study",
+    "value": 1
+  },
+  {
+    "description": "体力",
+    "id": 2,
+    "property": "Stamina",
+    "value": 2
+  },
+  {
+    "description": "容姿",
+    "id": 3,
+    "property": "Appearance ",
+    "value": 3
+  }
+]

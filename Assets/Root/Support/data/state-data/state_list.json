@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "MainLoop"
+  },
+  {
+    "id": 2,
+    "name": "TitleScene"
+  },
+  {
+    "id": 3,
+    "name": "GameScene"
+  },
+  {
+    "id": 4,
+    "name": "GamePlay"
+  },
+  {
+    "id": 5,
+    "name": "OptionUI"
+  },
+  {
+    "id": 6,
+    "name": "GameInitPlayer"
+  }
+]

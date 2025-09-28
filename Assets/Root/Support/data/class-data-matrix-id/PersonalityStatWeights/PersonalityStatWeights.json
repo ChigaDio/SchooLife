@@ -1,0 +1,719 @@
+{
+  "colId": "CharacterStat",
+  "data": {
+    "Aggressive": {
+      "Appearance ": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.1
+      },
+      "Stamina": {
+        "RiseFactor": 1.3,
+        "ActionProbability": 0.8
+      },
+      "Study": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.1
+      }
+    },
+    "Brave": {
+      "Appearance ": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.2
+      },
+      "Stamina": {
+        "RiseFactor": 1.2,
+        "ActionProbability": 0.6
+      },
+      "Study": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.2
+      }
+    },
+    "Calm": {
+      "Appearance ": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.2
+      },
+      "Stamina": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.3
+      },
+      "Study": {
+        "RiseFactor": 1.1,
+        "ActionProbability": 0.5
+      }
+    },
+    "Cheerful": {
+      "Appearance ": {
+        "RiseFactor": 1.2,
+        "ActionProbability": 0.5
+      },
+      "Stamina": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.3
+      },
+      "Study": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.2
+      }
+    },
+    "Kind": {
+      "Appearance ": {
+        "RiseFactor": 1.1,
+        "ActionProbability": 0.4
+      },
+      "Stamina": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.3
+      },
+      "Study": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.3
+      }
+    },
+    "Lazy": {
+      "Appearance ": {
+        "RiseFactor": 1.3,
+        "ActionProbability": 0.7
+      },
+      "Stamina": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.2
+      },
+      "Study": {
+        "RiseFactor": 0.7,
+        "ActionProbability": 0.1
+      }
+    },
+    "Normal": {
+      "Appearance ": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.3
+      },
+      "Stamina": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.3
+      },
+      "Study": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.3
+      }
+    },
+    "Optimistic": {
+      "Appearance ": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.2
+      },
+      "Stamina": {
+        "RiseFactor": 1.1,
+        "ActionProbability": 0.5
+      },
+      "Study": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.3
+      }
+    },
+    "Personality_12": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_13": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_14": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_15": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_16": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_17": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_18": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_19": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_20": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_21": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_22": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_23": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_24": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_25": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_26": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_27": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_28": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_29": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_30": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_31": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_32": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_33": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_34": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_35": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_36": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_37": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_38": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_39": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_40": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_41": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_42": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_43": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_44": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_45": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_46": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_47": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_48": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_49": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Personality_50": {
+      "Appearance ": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Stamina": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      },
+      "Study": {
+        "RiseFactor": 0,
+        "ActionProbability": 0
+      }
+    },
+    "Pessimistic": {
+      "Appearance ": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.3
+      },
+      "Stamina": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.2
+      },
+      "Study": {
+        "RiseFactor": 1.1,
+        "ActionProbability": 0.5
+      }
+    },
+    "Serious": {
+      "Appearance ": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.1
+      },
+      "Stamina": {
+        "RiseFactor": 0.9,
+        "ActionProbability": 0.2
+      },
+      "Study": {
+        "RiseFactor": 1.2,
+        "ActionProbability": 0.7
+      }
+    },
+    "Shy": {
+      "Appearance ": {
+        "RiseFactor": 1.1,
+        "ActionProbability": 0.4
+      },
+      "Stamina": {
+        "RiseFactor": 0.8,
+        "ActionProbability": 0.2
+      },
+      "Study": {
+        "RiseFactor": 1,
+        "ActionProbability": 0.4
+      }
+    }
+  },
+  "fields": [
+    {
+      "type": "float",
+      "name": "RiseFactor",
+      "description": "\u4e0a\u6607\u500d\u7387"
+    },
+    {
+      "type": "float",
+      "name": "ActionProbability",
+      "description": "\u5b9f\u884c\u78ba\u7387"
+    }
+  ],
+  "name": "PersonalityStatWeights",
+  "rowId": "Personality"
+}

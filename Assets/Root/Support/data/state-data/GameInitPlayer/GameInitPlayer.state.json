@@ -1,0 +1,235 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "LoadAssets",
+      "description": "ロードアセット",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "StartAnimation",
+      "description": "",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "InputCheck",
+      "description": "入力チェック",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "InputFinishAnimation",
+      "description": "入力終了アニメーション",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "SelectItemStartAnimation",
+      "description": "選択アイテムのスタートアニメーション",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "SelectFinishCheck",
+      "description": "セレクト終了か",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "SelectItemFinishAnimation",
+      "description": "選択アイテムの終了アニメーション",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "fromState": "SavePlayer",
+      "description": "セーブ",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "fromState": "UnloadAssets",
+      "description": "もう必要ないアセットをロード",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "data": {
+        "description": "ロードアセット",
+        "label": "LoadAssets",
+        "stateName": "GameInitPlayer",
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeIn"
+          }
+        ],
+        "targets": [
+          "2"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "1",
+      "measured": {
+        "height": 160,
+        "width": 150
+      },
+      "position": {
+        "x": -75,
+        "y": 195
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "",
+        "label": "StartAnimation",
+        "stateName": "GameInitPlayer",
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "InputCheck"
+          },
+          {
+            "id": 2,
+            "label": "InputFinishAnimation"
+          }
+        ],
+        "targets": [
+          "3"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "2",
+      "measured": {
+        "height": 210,
+        "width": 150
+      },
+      "position": {
+        "x": 285,
+        "y": 210
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "選択アイテムのスタートアニメーション",
+        "label": "SelectItemStartAnimation",
+        "stateName": "GameInitPlayer",
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "SelectFinishCheck"
+          },
+          {
+            "id": 2,
+            "label": "SelectItemFinishAnimation"
+          }
+        ],
+        "targets": [
+          "4"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "3",
+      "measured": {
+        "height": 230,
+        "width": 150
+      },
+      "position": {
+        "x": 720,
+        "y": 210
+      },
+      "selected": true,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "フェードアウト",
+        "label": "FadeOut",
+        "stateName": "GameInitPlayer",
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "SavePlayer"
+          },
+          {
+            "id": 2,
+            "label": "UnloadAssets"
+          }
+        ],
+        "targets": []
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "4",
+      "measured": {
+        "height": 210,
+        "width": 150
+      },
+      "position": {
+        "x": 1125,
+        "y": 210
+      },
+      "selected": false,
+      "type": "default"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "1",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e2",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "3",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    }
+  ]
+}
