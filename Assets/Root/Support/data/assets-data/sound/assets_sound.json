@@ -1,0 +1,30 @@
+{
+    "groups": {
+        "Game": [],
+        "UI": [
+            {
+                "name": "PushEnter",
+                "desc": "セレクト決定",
+                "path": "Assets/Root/RootAssets/Sound/SE/SelectPush.mp3",
+                "volume": 1,
+                "type": "SE"
+            },
+            {
+                "name": "PushSelect",
+                "desc": "セレクト移動",
+                "path": "Assets/Root/RootAssets/Sound/SE/SelectMove.mp3",
+                "volume": 1,
+                "type": "SE"
+            }
+        ],
+        "Title": [
+            {
+                "name": "TitleBGM",
+                "desc": "タイトルのBGM",
+                "path": "Assets/Root/RootAssets/Sound/BGM/TitleBGM.mp3",
+                "volume": 1,
+                "type": "BGM"
+            }
+        ]
+    }
+}

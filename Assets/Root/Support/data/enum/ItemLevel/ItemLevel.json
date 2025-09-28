@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "property": "ItemLevel_0",
+    "value": 1,
+    "description": "ItemLevel_0（デフォルト）"
+  },
+  {
+    "id": 2,
+    "property": "ItemLevel_1",
+    "value": 2,
+    "description": "ItemLevel_1（デフォルト）"
+  },
+  {
+    "id": 3,
+    "property": "ItemLevel_2",
+    "value": 3,
+    "description": "ItemLevel_2（デフォルト）"
+  },
+  {
+    "id": 4,
+    "property": "ItemLevel_3",
+    "value": 4,
+    "description": "ItemLevel_3（デフォルト）"
+  },
+  {
+    "id": 5,
+    "property": "ItemLevel_4",
+    "value": 5,
+    "description": "ItemLevel_4（デフォルト）"
+  },
+  {
+    "id": 6,
+    "property": "ItemLevel_5",
+    "value": 6,
+    "description": "ItemLevel_5（デフォルト）"
+  },
+  {
+    "id": 7,
+    "property": "ItemLevel_6",
+    "value": 7,
+    "description": "ItemLevel_6（デフォルト）"
+  },
+  {
+    "id": 8,
+    "property": "ItemLevel_7",
+    "value": 8,
+    "description": "ItemLevel_7（デフォルト）"
+  },
+  {
+    "id": 9,
+    "property": "ItemLevel_8",
+    "value": 9,
+    "description": "ItemLevel_8（デフォルト）"
+  },
+  {
+    "id": 10,
+    "property": "ItemLevel_9",
+    "value": 10,
+    "description": "ItemLevel_9（デフォルト）"
+  }
+]

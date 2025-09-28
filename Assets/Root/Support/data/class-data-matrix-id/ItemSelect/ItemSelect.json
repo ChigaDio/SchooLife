@@ -1,0 +1,313 @@
+{
+  "colId": "ItemLevel",
+  "data": {
+    "Appearance ": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Health": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Item_05": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Item_06": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Item_07": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Stamina": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    },
+    "Study": {
+      "ItemLevel_0": {
+        "point": 500,
+        "value": 1.05
+      },
+      "ItemLevel_1": {
+        "point": 2667,
+        "value": 1.1
+      },
+      "ItemLevel_2": {
+        "point": 4833,
+        "value": 1.15
+      },
+      "ItemLevel_3": {
+        "point": 7000,
+        "value": 1.2
+      },
+      "ItemLevel_4": {
+        "point": 9167,
+        "value": 1.25
+      },
+      "ItemLevel_5": {
+        "point": 11333,
+        "value": 1.3
+      },
+      "ItemLevel_6": {
+        "point": 13500,
+        "value": 1.35
+      },
+      "ItemLevel_7": {
+        "point": 15667,
+        "value": 1.4
+      },
+      "ItemLevel_8": {
+        "point": 17833,
+        "value": 1.45
+      },
+      "ItemLevel_9": {
+        "point": 20000,
+        "value": 1.5
+      }
+    }
+  },
+  "fields": [
+    {
+      "description": "\u5165\u624b\u30dd\u30a4\u30f3\u30c8",
+      "name": "point",
+      "type": "float"
+    },
+    {
+      "description": "\u80fd\u529b",
+      "name": "value",
+      "type": "float"
+    }
+  ],
+  "name": "ItemSelect",
+  "rowId": "Item"
+}

@@ -1,0 +1,237 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "StartAnimation",
+      "description": "開始アニメーション",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "ExitCheck",
+      "description": "終了チェック",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "FinishAnimation",
+      "description": "終了アニメーション",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "SaveData",
+      "description": "データをセーブ",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -300,
+        "y": 330
+      },
+      "data": {
+        "label": "FadeIn",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "フェードイン"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 90,
+        "y": 330
+      },
+      "data": {
+        "label": "StartAnimation",
+        "targets": [
+          "3"
+        ],
+        "subNodes": [],
+        "description": "開始アニメーション"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 465,
+        "y": 330
+      },
+      "data": {
+        "label": "ExitCheck",
+        "targets": [
+          "4"
+        ],
+        "subNodes": [],
+        "description": "終了チェック"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 885,
+        "y": 330
+      },
+      "data": {
+        "label": "FinishAnimation",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "終了アニメーション"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 1275,
+        "y": 330
+      },
+      "data": {
+        "label": "SaveData",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "データをセーブ"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 1650,
+        "y": 345
+      },
+      "data": {
+        "label": "FadeOut",
+        "targets": [],
+        "subNodes": [],
+        "description": "フェードアウト"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "4",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "5",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "6",
+      "id": "e5"
+    }
+  ]
+}

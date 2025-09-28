@@ -1,0 +1,249 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "LoadAssets",
+      "description": "",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "SwitchGameLoad",
+      "description": "セーブデータが存在するかどうか",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "InitGame",
+      "description": "初期ゲーム",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "LoadSaveData",
+      "description": "セーブデータをロード",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "GameLoop",
+      "description": "ゲームのループ",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "UnLoadAssets",
+      "description": "ロードしたアセットの解放",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -135,
+        "y": 345
+      },
+      "data": {
+        "label": "LoadAssets",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": ""
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 225,
+        "y": 345
+      },
+      "data": {
+        "label": "SwitchGameLoad",
+        "targets": [
+          "3",
+          "4"
+        ],
+        "subNodes": [],
+        "description": "セーブデータが存在するかどうか"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 600,
+        "y": 555
+      },
+      "data": {
+        "label": "InitGame",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "初期ゲーム"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 615,
+        "y": 285
+      },
+      "data": {
+        "label": "LoadSaveData",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "セーブデータをロード"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 1020,
+        "y": 435
+      },
+      "data": {
+        "label": "GameLoop",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "ゲームのループ"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 1410,
+        "y": 435
+      },
+      "data": {
+        "label": "UnLoadAssets",
+        "targets": [],
+        "subNodes": [],
+        "description": "ロードしたアセットの解放"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "4",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "5",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "5",
+      "id": "e5"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "6",
+      "id": "e6"
+    }
+  ]
+}

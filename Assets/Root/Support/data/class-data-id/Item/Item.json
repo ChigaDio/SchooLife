@@ -1,0 +1,87 @@
+{
+  "columns": [
+    {
+      "name": "use",
+      "type": "bool"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Study",
+      "description": "勉強",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Stamina",
+      "description": "運動",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Appearance ",
+      "description": "容姿",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Health",
+      "description": "体力",
+      "data": {
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Item_05",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "Item_06",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "Item_07",
+      "description": "",
+      "data": {
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    }
+  ]
+}

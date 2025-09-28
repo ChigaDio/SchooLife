@@ -1,0 +1,764 @@
+{
+  "columns": [
+    {
+      "name": "use",
+      "type": "bool"
+    },
+    {
+      "type": "string",
+      "name": "jpText"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Normal",
+      "description": "普通",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "普通",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Brave",
+      "description": "勇敢",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "勇敢",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Calm",
+      "description": "冷静",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "冷静",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Cheerful",
+      "description": "陽気",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "陽気",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Shy",
+      "description": "内気",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "内気",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "Aggressive",
+      "description": "怒りっぽい",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "怒りっぽい",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "Kind",
+      "description": "優しい",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "優しい",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "Serious",
+      "description": "真面目",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "真面目",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "Lazy",
+      "description": "怠け者",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "怠け者",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "Optimistic",
+      "description": "楽観的",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "楽観的",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "Pessimistic",
+      "description": "悲観的",
+      "data": {
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "jpText": {
+          "value": "悲観的",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "enum_property": "Personality_12",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "enum_property": "Personality_13",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "enum_property": "Personality_14",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "enum_property": "Personality_15",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "enum_property": "Personality_16",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "enum_property": "Personality_17",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "enum_property": "Personality_18",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "enum_property": "Personality_19",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "enum_property": "Personality_20",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "enum_property": "Personality_21",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "enum_property": "Personality_22",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "enum_property": "Personality_23",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "enum_property": "Personality_24",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "enum_property": "Personality_25",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "enum_property": "Personality_26",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "enum_property": "Personality_27",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "enum_property": "Personality_28",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "enum_property": "Personality_29",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "enum_property": "Personality_30",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "enum_property": "Personality_31",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "enum_property": "Personality_32",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "enum_property": "Personality_33",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "enum_property": "Personality_34",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "enum_property": "Personality_35",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "enum_property": "Personality_36",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "enum_property": "Personality_37",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "enum_property": "Personality_38",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "enum_property": "Personality_39",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "enum_property": "Personality_40",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "enum_property": "Personality_41",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "enum_property": "Personality_42",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "enum_property": "Personality_43",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "enum_property": "Personality_44",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "enum_property": "Personality_45",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "enum_property": "Personality_46",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "enum_property": "Personality_47",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "enum_property": "Personality_48",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "enum_property": "Personality_49",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "enum_property": "Personality_50",
+      "description": "",
+      "data": {
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "jpText": {
+          "value": "",
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

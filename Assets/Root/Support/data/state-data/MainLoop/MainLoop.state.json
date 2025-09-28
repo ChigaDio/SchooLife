@@ -1,0 +1,144 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "Title",
+      "description": "タイトル",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "Game",
+      "description": "ゲーム",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "Exit",
+      "description": "終了",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "data": {
+        "description": "タイトル",
+        "label": "Title",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "2",
+          "3"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "1",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 0,
+        "y": 375
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "ゲーム",
+        "label": "Game",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "3",
+          "1"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "2",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 660,
+        "y": -90
+      },
+      "selected": true,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "終了",
+        "label": "Exit",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": []
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "3",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 660,
+        "y": 660
+      },
+      "selected": false,
+      "type": "default"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "1",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e2",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "1",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "1",
+      "id": "e4"
+    }
+  ]
+}
