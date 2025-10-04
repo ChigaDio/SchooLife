@@ -3,6 +3,7 @@ using UnityEngine;
 using GameCore.States.Branch;
 using GameCore.Sound;
 using Cysharp.Threading.Tasks;
+using GameCore.Enums;
 namespace GameCore.States
 {
     public class TitleSceneTitleSelectState : BaseTitleSceneTitleSelectState

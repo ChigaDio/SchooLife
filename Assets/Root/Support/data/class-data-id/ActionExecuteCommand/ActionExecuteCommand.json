@@ -1,0 +1,89 @@
+{
+  "columns": [
+    {
+      "name": "jpName",
+      "type": "string"
+    },
+    {
+      "name": "enName",
+      "type": "string"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Study",
+      "description": "学習",
+      "data": {
+        "enName": {
+          "type": "string",
+          "value": "Study"
+        },
+        "jpName": {
+          "type": "string",
+          "value": "学習"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Date",
+      "description": "デート",
+      "data": {
+        "enName": {
+          "type": "string",
+          "value": "Date"
+        },
+        "jpName": {
+          "type": "string",
+          "value": "デート"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Rest",
+      "description": "休息",
+      "data": {
+        "enName": {
+          "type": "string",
+          "value": "Rest"
+        },
+        "jpName": {
+          "type": "string",
+          "value": "休息"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Option",
+      "description": "オプション",
+      "data": {
+        "jpName": {
+          "value": "オプション",
+          "type": "string"
+        },
+        "enName": {
+          "value": "Option",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Finish",
+      "description": "終了",
+      "data": {
+        "jpName": {
+          "value": "終了",
+          "type": "string"
+        },
+        "enName": {
+          "value": "Exit",
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

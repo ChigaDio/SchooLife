@@ -4,6 +4,7 @@ using GameCore.States.Branch;
 using Cysharp.Threading.Tasks;
 using GameCore.Sound;
 using AddressableSystem;
+using GameCore.Enums;
 namespace GameCore.States
 {
     public class TitleSceneLoadAssetsState : BaseTitleSceneLoadAssetsState

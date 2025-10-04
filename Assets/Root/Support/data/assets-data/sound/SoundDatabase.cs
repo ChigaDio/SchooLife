@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using GameCore.Enums;
 namespace GameCore.Sound {
     public class SoundDatabase {
         [System.Serializable]

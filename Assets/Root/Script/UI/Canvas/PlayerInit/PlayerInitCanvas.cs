@@ -132,6 +132,12 @@ public class PlayerInitCanvas : BaseSingleton<PlayerInitCanvas>
     {
         base.AwakeSingleton();
         inputData?.SetUp();
+        // フォントの事前ロード
+        if (inputData?.personalityDown?.captionText?.font != null)
+        {
+            inputData.personalityDown.captionText.font.ReadFontAssetDefinition();
+        }
+
 
     }
 }

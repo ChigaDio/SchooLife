@@ -6,7 +6,7 @@ using UnityEngine;
 using Cysharp.Threading.Tasks;
 using AddressableSystem;
 using GameCore.SaveSystem;
-
+using GameCore.Enums;
 namespace GameCore.Sound
 {
     public class SoundCore : BaseSingleton<SoundCore>
@@ -92,7 +92,7 @@ namespace GameCore.Sound
             foreach (var sound in sounds.Sounds)
             {
                 var addressable = new AddressableData<AudioClip>(groupCategory, AssetCategory.Audio);
-                AddressableDataCore.Instance.AddAddressableData(groupCategory, AssetCategory.Audio, addressable);
+                
                 tasks.Add(addressable.LoadAsync(sound.AddressablePath, clip =>
                 {
                     if (addressable.IsLoadedAndSetup)

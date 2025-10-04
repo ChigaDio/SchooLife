@@ -9,7 +9,8 @@ public enum GameScene
 {
     Title,
     Main,
-    PlayerSetting
+    PlayerSetting,
+    GamePlay
 }
 
 public class SceneLoader
@@ -19,7 +20,9 @@ public class SceneLoader
     {
         { GameScene.Title, "TitleScene" },
         { GameScene.Main, "MainScene" },
-        {GameScene.PlayerSetting,"PlayerInitScene" }
+        {GameScene.PlayerSetting,"PlayerInitScene" },
+        {GameScene.GamePlay,"GameScene" }
+
     };
 
     private static readonly HashSet<GameScene> loadedScenes = new HashSet<GameScene>();
