@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
+using GameCore.Enums;
 namespace GameCore.Sound
 {
     public class SoundBinaryReader

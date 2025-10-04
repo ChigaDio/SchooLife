@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "property": "Execute",
+    "value": 1,
+    "description": "実行"
+  },
+  {
+    "id": 2,
+    "property": "Status",
+    "value": 2,
+    "description": "ステータス"
+  },
+  {
+    "id": 3,
+    "property": "Date",
+    "value": 3,
+    "description": "デート"
+  }
+]

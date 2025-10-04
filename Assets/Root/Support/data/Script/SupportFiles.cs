@@ -13,26 +13,30 @@ namespace GameCore
     /// </summary>
     public static class SupportFiles
     {
-        private const string SUPPORT_ROOT_NAME = "SupportChigadio";
-        private const string SUPPORT_DATA_NAME = "data";
+        public const string SUPPORT_ROOT_NAME = "SupportChigadio";
+        public const string SUPPORT_DATA_NAME = "data";
 
         // data直下のフォルダ
-        private const string ASSETS_FOLDER = "assets-data";
-        private const string SOUND_FOLDER = "sound";
+        public const string ASSETS_FOLDER = "assets-data";
+        public const string SOUND_FOLDER = "sound";
+        public const string TEXTURE_FOLDER = "texture";
+        public const string GAMEOBJECT_FOLDER = "gameobject";
 
         //dataID
-        private const string ID_FOLDER = "class-data-id";
-        private const string ID_BIN_FILE = "all_class_data.bin";
+        public const string ID_FOLDER = "class-data-id";
+        public const string ID_BIN_FILE = "all_class_data.bin";
 
         //matrixID
-        private const string MATRIX_DATA_ID_FOLDER = "class-data-matrix-id";
-        private const string MATRIX_ID_BIN_FILE = "all_class_data_matrix.bin";
+        public const string MATRIX_DATA_ID_FOLDER = "class-data-matrix-id";
+        public const string MATRIX_ID_BIN_FILE = "all_class_data_matrix.bin";
 
         // ファイル名（ここだけ定義すればOK）
-        private const string ALL_SOUND_BIN_FILE = "sound_data.bin";
+        public const string ALL_SOUND_BIN_FILE = "sound_data.bin";
+        public const string ALL_TEXTURE_BIN_FILE = "texture_data.bin";
+        public const string ALL_GAMEOBJECT_BIN_FILE = "gameobject_data.bin";
 
         // キャッシュ（最初に解決したパスを保持）
-        private static string s_cachedSupportDataPath = null;
+        public static string s_cachedSupportDataPath = null;
 
         /// <summary>
         /// SupportChigadio/data のフルパスを取得（キャッシュあり／EditorではAssetDatabaseを試行）
@@ -52,7 +56,7 @@ namespace GameCore
                     {
                         string projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
                         string absoluteSupportRoot = Path.GetFullPath(Path.Combine(projectRoot, assetsRelative)); // -> .../Project/Assets/.../SupportChigadio
-                        string dataPath = Path.Combine(absoluteSupportRoot, "..",SUPPORT_DATA_NAME);
+                        string dataPath = Path.Combine(absoluteSupportRoot, "..", SUPPORT_DATA_NAME);
                         s_cachedSupportDataPath = Path.GetFullPath(dataPath).Replace("\\", "/");
                         return s_cachedSupportDataPath;
                     }
@@ -99,6 +103,8 @@ namespace GameCore
         /// これだけ参照すれば all_sound.bin のフルパスが得られる（呼び出し側はこれだけ見れば良い）
         /// </summary>
         public static string ALL_SOUND_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ASSETS_FOLDER, SOUND_FOLDER, ALL_SOUND_BIN_FILE)).Replace("\\", "/");
+        public static string ALL_TEXTURE_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ASSETS_FOLDER, TEXTURE_FOLDER, ALL_TEXTURE_BIN_FILE)).Replace("\\", "/");
+        public static string ALL_GAMEOBJECT_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ASSETS_FOLDER, GAMEOBJECT_FOLDER, ALL_GAMEOBJECT_BIN_FILE)).Replace("\\", "/");
         public static string ALL_MATRIX_ID_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, MATRIX_DATA_ID_FOLDER, MATRIX_ID_BIN_FILE)).Replace("\\", "/");
         public static string ALL_ID_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ID_FOLDER, ID_BIN_FILE)).Replace("\\", "/");
 

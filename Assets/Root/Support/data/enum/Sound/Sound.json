@@ -1,0 +1,26 @@
+[
+    {
+        "description": "基本BGM",
+        "id": 1,
+        "property": "Game_PlayGame",
+        "value": 1
+    },
+    {
+        "description": "セレクト決定",
+        "id": 2,
+        "property": "UI_PushEnter",
+        "value": 2
+    },
+    {
+        "description": "セレクト移動",
+        "id": 3,
+        "property": "UI_PushSelect",
+        "value": 3
+    },
+    {
+        "description": "タイトルのBGM",
+        "id": 4,
+        "property": "Title_TitleBGM",
+        "value": 4
+    }
+]

@@ -1,0 +1,769 @@
+{
+  "columns": [
+    {
+      "name": "jpFamilyName",
+      "type": "string"
+    },
+    {
+      "name": "jpFirstName",
+      "type": "string"
+    },
+    {
+      "name": "enFamilyName",
+      "type": "string"
+    },
+    {
+      "name": "enFirstName",
+      "type": "string"
+    },
+    {
+      "name": "textureID",
+      "type": "Texture"
+    },
+    {
+      "name": "spriteID",
+      "type": "Game_CharacterList01"
+    },
+    {
+      "name": "use",
+      "type": "bool"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Character_00",
+      "description": "プレイヤー",
+      "data": {
+        "jpFamilyName": {
+          "value": "冬木",
+          "type": "string"
+        },
+        "jpFirstName": {
+          "value": "達郎",
+          "type": "string"
+        },
+        "enFamilyName": {
+          "value": "Fuyuki",
+          "type": "string"
+        },
+        "enFirstName": {
+          "value": "Taturou",
+          "type": "string"
+        },
+        "textureID": {
+          "value": "TextureID.Game_CharacterList01",
+          "type": "Texture"
+        },
+        "spriteID": {
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0",
+          "type": "Game_CharacterList01"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Character_01",
+      "description": "春咲",
+      "data": {
+        "jpFamilyName": {
+          "value": "春咲",
+          "type": "string"
+        },
+        "jpFirstName": {
+          "value": "あかね",
+          "type": "string"
+        },
+        "enFamilyName": {
+          "value": "Harusaki",
+          "type": "string"
+        },
+        "enFirstName": {
+          "value": "Akane",
+          "type": "string"
+        },
+        "textureID": {
+          "value": "TextureID.Game_CharacterList01",
+          "type": "Texture"
+        },
+        "spriteID": {
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_1",
+          "type": "Game_CharacterList01"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Character_02",
+      "description": "サマー",
+      "data": {
+        "jpFamilyName": {
+          "value": "サマー",
+          "type": "string"
+        },
+        "jpFirstName": {
+          "value": "ノエル",
+          "type": "string"
+        },
+        "enFamilyName": {
+          "value": "Summer",
+          "type": "string"
+        },
+        "enFirstName": {
+          "value": "Noel",
+          "type": "string"
+        },
+        "textureID": {
+          "value": "TextureID.Game_CharacterList01",
+          "type": "Texture"
+        },
+        "spriteID": {
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_2",
+          "type": "Game_CharacterList01"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Character_03",
+      "description": "秋野",
+      "data": {
+        "jpFamilyName": {
+          "value": "秋野",
+          "type": "string"
+        },
+        "jpFirstName": {
+          "value": "よし子",
+          "type": "string"
+        },
+        "enFamilyName": {
+          "value": "Akino",
+          "type": "string"
+        },
+        "enFirstName": {
+          "value": "Yoshiko",
+          "type": "string"
+        },
+        "textureID": {
+          "value": "TextureID.Game_CharacterList01",
+          "type": "Texture"
+        },
+        "spriteID": {
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_3",
+          "type": "Game_CharacterList01"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Character_04",
+      "description": "",
+      "data": {
+        "jpFamilyName": {
+          "value": "",
+          "type": "string"
+        },
+        "jpFirstName": {
+          "value": "",
+          "type": "string"
+        },
+        "enFamilyName": {
+          "value": "",
+          "type": "string"
+        },
+        "enFirstName": {
+          "value": "",
+          "type": "string"
+        },
+        "textureID": {
+          "value": "TextureID.Game_CharacterList01",
+          "type": "Texture"
+        },
+        "spriteID": {
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_4",
+          "type": "Game_CharacterList01"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "Character_05",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "Character_06",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "Character_07",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "Character_08",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "Character_09",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "Character_10",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 12,
+      "enum_property": "Character_11",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 13,
+      "enum_property": "Character_12",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 14,
+      "enum_property": "Character_13",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 15,
+      "enum_property": "Character_14",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 16,
+      "enum_property": "Character_15",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 17,
+      "enum_property": "Character_16",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 18,
+      "enum_property": "Character_17",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 19,
+      "enum_property": "Character_18",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 20,
+      "enum_property": "Character_19",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    {
+      "id": 21,
+      "enum_property": "Character_20",
+      "description": "",
+      "data": {
+        "enFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "enFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFamilyName": {
+          "type": "string",
+          "value": ""
+        },
+        "jpFirstName": {
+          "type": "string",
+          "value": ""
+        },
+        "spriteID": {
+          "type": "Game_CharacterList01",
+          "value": "Game_CharacterList01ID.CharacterList01_Character01_Sheet_0"
+        },
+        "textureID": {
+          "type": "Texture",
+          "value": "TextureID.Game_CharacterList01"
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    }
+  ]
+}

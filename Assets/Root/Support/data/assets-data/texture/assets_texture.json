@@ -1,0 +1,20 @@
+{
+    "groups": {
+        "Game": [
+            {
+                "name": "CharacterList01",
+                "desc": "キャラスプライト01",
+                "path": "Assets/Root/RootAssets/Character/Character01_Sheet.png",
+                "isSpriteRender": true,
+                "absolute_path": "D:\\DoujinGameUnity\\SchooLife\\Assets\\Root\\RootAssets\\Character\\Character01_Sheet.png",
+                "sprites": [
+                    "Character01_Sheet_0",
+                    "Character01_Sheet_1",
+                    "Character01_Sheet_2",
+                    "Character01_Sheet_3",
+                    "Character01_Sheet_4"
+                ]
+            }
+        ]
+    }
+}

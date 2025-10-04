@@ -7,6 +7,10 @@ using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
+using UnityEditorInternal;
+using System.Collections.Generic;
+using UnityEditor.U2D.Sprites;
+using System.Linq;
 
 public class EditorCommunication : EditorWindow
 {
@@ -14,10 +18,24 @@ public class EditorCommunication : EditorWindow
     private static Thread listenerThread;
     private static volatile bool pendingCommand;
     private static string pendingCommandName;
-    private static CommData pendingCommandData; // C³: string ‚©‚ç CommData ‚É•ÏX
+    private static CommData pendingCommandData;
     private static string commandResult;
 
-    [MenuItem("Tools/’ÊMƒT[ƒo[ŠJn")]
+    // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼é …ç›®ã‚’è¿½åŠ 
+    [MenuItem("Window/Communication Server")]
+    public static void ShowWindow()
+    {
+        GetWindow<EditorCommunication>("Comm Server");
+    }
+
+    // JsonUtility ã¯ List ã‚’ç›´åˆ—åŒ–ã§ããªã„ã®ã§ãƒ©ãƒƒãƒ‘ãƒ¼ãŒå¿…è¦
+    [System.Serializable]
+    private class Wrapper<T>
+    {
+        public List<T> items;
+    }
+
+    [MenuItem("Tools/é€šä¿¡ã‚µãƒ¼ãƒãƒ¼é–‹å§‹")]
     public static void StartServer()
     {
         if (listener != null) return;
@@ -27,16 +45,49 @@ public class EditorCommunication : EditorWindow
         listenerThread.IsBackground = true;
         listenerThread.Start();
         EditorApplication.update += ProcessPendingCommand;
-        Debug.Log("’ÊMƒT[ƒo[‚ğŠJn‚µ‚Ü‚µ‚½B");
+        Debug.Log("é€šä¿¡ã‚µãƒ¼ãƒãƒ¼ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚");
     }
 
-    [MenuItem("Tools/’ÊMƒT[ƒo[’â~")]
+    [MenuItem("Tools/é€šä¿¡ã‚µãƒ¼ãƒãƒ¼åœæ­¢")]
     public static void StopServer()
     {
         listener?.Stop();
         listener = null;
         EditorApplication.update -= ProcessPendingCommand;
-        Debug.Log("’ÊMƒT[ƒo[‚ğ’â~‚µ‚Ü‚µ‚½B");
+        Debug.Log("é€šä¿¡ã‚µãƒ¼ãƒãƒ¼ã‚’åœæ­¢ã—ã¾ã—ãŸã€‚");
+    }
+
+    // Editorã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®GUIã‚’æç”»
+    private void OnGUI()
+    {
+        GUILayout.Label("Communication Server Status", EditorStyles.boldLabel);
+
+        // ã‚µãƒ¼ãƒãƒ¼çŠ¶æ…‹ã«å¿œã˜ã¦ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿ãƒ¼ã®è‰²ã‚’è¨­å®š
+        Color indicatorColor = listener != null ? Color.green : Color.red;
+        string statusText = listener != null ? "Running" : "Stopped";
+
+        // ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿ãƒ¼ã®æç”»
+        Rect indicatorRect = GUILayoutUtility.GetRect(20, 20);
+        EditorGUI.DrawRect(indicatorRect, indicatorColor);
+
+        // ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ†ã‚­ã‚¹ãƒˆã®è¡¨ç¤º
+        GUILayout.Label($"Status: {statusText}", EditorStyles.label);
+
+        // ã‚µãƒ¼ãƒãƒ¼é–‹å§‹/åœæ­¢ãƒœã‚¿ãƒ³
+        if (listener == null)
+        {
+            if (GUILayout.Button("Start Server"))
+            {
+                StartServer();
+            }
+        }
+        else
+        {
+            if (GUILayout.Button("Stop Server"))
+            {
+                StopServer();
+            }
+        }
     }
 
     private static void ListenForClients()
@@ -56,18 +107,15 @@ public class EditorCommunication : EditorWindow
                     string msg = System.Text.Encoding.UTF8.GetString(msgBytes);
                     var json = JsonUtility.FromJson<CommMessage>(msg);
 
-                    // ƒƒCƒ“ƒXƒŒƒbƒh‚Åˆ—‚·‚é‚½‚ß‚ÉƒRƒ}ƒ“ƒh‚ğ•Û‘¶
                     pendingCommandName = json.command;
-                    pendingCommandData = json.data; // C³: string ‚©‚ç CommData ‚É•ÏX
+                    pendingCommandData = json.data;
                     pendingCommand = true;
 
-                    // ƒƒCƒ“ƒXƒŒƒbƒh‚ªˆ—‚ğI‚¦‚é‚Ü‚Å‘Ò‹@
                     while (pendingCommand)
                     {
                         Thread.Sleep(10);
                     }
 
-                    // ƒŒƒXƒ|ƒ“ƒX‚ğ‘—M
                     var response = new CommMessage { result = commandResult };
                     byte[] respBytes = System.Text.Encoding.UTF8.GetBytes(JsonUtility.ToJson(response));
                     stream.Write(BitConverter.GetBytes(respBytes.Length), 0, 4);
@@ -85,8 +133,6 @@ public class EditorCommunication : EditorWindow
     private static void ProcessPendingCommand()
     {
         if (!pendingCommand) return;
-
-        // ƒƒCƒ“ƒXƒŒƒbƒh‚ÅƒRƒ}ƒ“ƒh‚ğˆ—
         commandResult = HandleCommand(pendingCommandName, pendingCommandData);
         pendingCommand = false;
     }
@@ -102,15 +148,12 @@ public class EditorCommunication : EditorWindow
             string filePath = data.file_path;
             Debug.Log($"Received filePath: {filePath}");
 
-            // ƒvƒƒWƒFƒNƒgƒ‹[ƒg‚ğæ“¾
             string projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..")).Replace("\\", "/").TrimEnd('/');
             Debug.Log($"Project root (normalized): {projectRoot}");
 
-            // filePath ‚ğ³‹K‰»iƒXƒ‰ƒbƒVƒ…‚ğ“ˆêj
             string normalizedFilePath = filePath.Replace("\\", "/").TrimEnd('/');
             Debug.Log($"Normalized filePath: {normalizedFilePath}");
 
-            // ‘Š‘ÎƒpƒX‚ğŒvZ
             string assetPath = normalizedFilePath;
             if (normalizedFilePath.StartsWith(projectRoot, StringComparison.OrdinalIgnoreCase))
             {
@@ -122,7 +165,6 @@ public class EditorCommunication : EditorWindow
                 Debug.LogWarning($"filePath does not start with project root: {projectRoot}");
             }
 
-            // ƒpƒX‚ğ Unity ‚ÌŒ`®iAssets/ n‚Ü‚èj‚É“ˆê
             assetPath = assetPath.Replace("\\", "/").Trim();
             if (!assetPath.StartsWith("Assets/", StringComparison.OrdinalIgnoreCase))
             {
@@ -130,25 +172,22 @@ public class EditorCommunication : EditorWindow
             }
             Debug.Log($"Final assetPath: {assetPath}");
 
-            // AssetDatabase ‚ÅƒpƒX‚ğŒŸØ
             string fullPath = Path.Combine(projectRoot, assetPath).Replace("\\", "/");
             if (!AssetDatabase.IsValidFolder(Path.GetDirectoryName(assetPath)) && !File.Exists(fullPath))
             {
                 Debug.LogWarning($"Invalid asset path for AssetDatabase: {assetPath}");
-                return assetPath; // –³Œø‚Èê‡‚Í‘Š‘ÎƒpƒX‚ğ•Ô‚·
+                return assetPath;
             }
 
-            // GUID ‚ğæ“¾
             string guid = AssetDatabase.AssetPathToGUID(assetPath);
             Debug.Log($"GUID: {guid}");
 
             if (string.IsNullOrEmpty(guid) || guid == "00000000000000000000000000000000")
             {
                 Debug.LogWarning($"No valid GUID found for assetPath: {assetPath}");
-                return assetPath; // ‘Š‘ÎƒpƒX‚ğ•Ô‚·
+                return assetPath;
             }
 
-            // Addressable İ’è‚©‚çƒGƒ“ƒgƒŠ‚ğŒŸõ
             AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.Settings;
             if (settings == null)
             {
@@ -168,6 +207,49 @@ public class EditorCommunication : EditorWindow
                 return assetPath;
             }
         }
+        else if (command == "get_sprite_info")
+        {
+            string filePath = data.file_path;
+            string assetPath = filePath.Replace("\\", "/");
+            string projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..")).Replace("\\", "/").TrimEnd('/');
+            if (assetPath.StartsWith(projectRoot, StringComparison.OrdinalIgnoreCase))
+            {
+                assetPath = assetPath.Substring(projectRoot.Length).TrimStart('/');
+            }
+            if (!assetPath.StartsWith("Assets/", StringComparison.OrdinalIgnoreCase))
+            {
+                assetPath = "Assets/" + assetPath.TrimStart('/');
+            }
+
+            TextureImporter importer = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+            if (importer == null || importer.spriteImportMode != SpriteImportMode.Multiple)
+            {
+                return "[]";
+            }
+
+            var assets = AssetDatabase.LoadAllAssetsAtPath(assetPath);
+            var sprites = new List<Sprite>();  // Spriteå‹ã§ãƒªã‚¹ãƒˆã«ã™ã‚‹
+            foreach (var obj in assets)
+            {
+                if (obj is Sprite sprite)
+                {
+                    sprites.Add(sprite);
+                }
+            }
+
+            // åå‰ã‹ã‚‰æ•°å€¤éƒ¨åˆ†ã‚’æŠ½å‡ºã—ã¦ã‚½ãƒ¼ãƒˆï¼ˆä¾‹: "sprite_10" ã® "10" ã‚’intã«å¤‰æ›ï¼‰
+            sprites.Sort((a, b) =>
+            {
+                int numA = int.Parse(a.name.Split('_').Last());  // åå‰ãŒ "sprite_æ•°å­—" å½¢å¼ã®å ´åˆ
+                int numB = int.Parse(b.name.Split('_').Last());
+                return numA.CompareTo(numB);
+            });
+
+            // åå‰ãƒªã‚¹ãƒˆã«ã™ã‚‹å ´åˆ
+            var spriteNames = sprites.Select(s => s.name).ToList();
+
+            return JsonUtility.ToJson(new Wrapper<string> { items = spriteNames });
+        }
         return null;
     }
 
@@ -175,13 +257,13 @@ public class EditorCommunication : EditorWindow
     private class CommMessage
     {
         public string command;
-        public CommData data; // C³: string ‚©‚ç CommData ‚É•ÏX
+        public CommData data;
         public string result;
     }
 
     [System.Serializable]
     private class CommData
     {
-        public string file_path; // JSON ‚Ì "file_path" ‚É‘Î‰
+        public string file_path;
     }
 }

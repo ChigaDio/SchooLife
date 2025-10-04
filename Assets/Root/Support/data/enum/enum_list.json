@@ -6,5 +6,29 @@
   {
     "id": 2,
     "name": "ItemLevel"
+  },
+  {
+    "id": 3,
+    "name": "Sound",
+    "view": false
+  },
+  {
+    "id": 4,
+    "name": "Texture",
+    "view": false
+  },
+  {
+    "id": 5,
+    "name": "GameObject",
+    "view": false
+  },
+  {
+    "id": 6,
+    "name": "Game_CharacterList01",
+    "view": false
+  },
+  {
+    "id": 7,
+    "name": "ActionCommand"
   }
 ]

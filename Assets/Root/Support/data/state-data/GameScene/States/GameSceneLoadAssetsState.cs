@@ -16,7 +16,8 @@ namespace GameCore.States
             ClassDataIDCore.Instance.LoadClassDataAsync((reader, header) =>
             {
                 header.GetData<PersonalityTable>(Enums.TableID.Personality, reader);
-
+                header.GetData<CharacterTable>(Enums.TableID.Character, reader);
+                header.GetData<ActionExecuteCommandTable>(Enums.TableID.ActionExecuteCommand, reader);
                 //マトリックスデータをロード
                 ClassDataMatrixIDCore.Instance.LoadClassDataAsync((reader, header) =>
                 {

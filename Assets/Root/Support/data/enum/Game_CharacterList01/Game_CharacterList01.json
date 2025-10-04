@@ -1,0 +1,37 @@
+[
+    {
+        "description": "キャラスプライト01(Sprite:Character01_Sheet_0)",
+        "id": 0,
+        "property": "CharacterList01_Character01_Sheet_0",
+        "isSpriteRender": true,
+        "value": 0
+    },
+    {
+        "description": "キャラスプライト01(Sprite:Character01_Sheet_1)",
+        "id": 1,
+        "property": "CharacterList01_Character01_Sheet_1",
+        "isSpriteRender": true,
+        "value": 1
+    },
+    {
+        "description": "キャラスプライト01(Sprite:Character01_Sheet_2)",
+        "id": 2,
+        "property": "CharacterList01_Character01_Sheet_2",
+        "isSpriteRender": true,
+        "value": 2
+    },
+    {
+        "description": "キャラスプライト01(Sprite:Character01_Sheet_3)",
+        "id": 3,
+        "property": "CharacterList01_Character01_Sheet_3",
+        "isSpriteRender": true,
+        "value": 3
+    },
+    {
+        "description": "キャラスプライト01(Sprite:Character01_Sheet_4)",
+        "id": 4,
+        "property": "CharacterList01_Character01_Sheet_4",
+        "isSpriteRender": true,
+        "value": 4
+    }
+]

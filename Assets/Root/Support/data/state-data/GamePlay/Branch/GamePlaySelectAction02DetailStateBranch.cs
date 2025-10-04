@@ -9,27 +9,27 @@ namespace GameCore.States.Branch
     {
         public override bool GamePlaySelectAction_to_Conduct03(GamePlayStateManagerData manager_data, GamePlaySelectActionState state)
         {
-            return false;
+            return manager_data.actionExecuteID == Tables.ID.ActionExecuteCommandTableID.Study;
         }
 
         public override bool GamePlaySelectAction_to_Date04(GamePlayStateManagerData manager_data, GamePlaySelectActionState state)
         {
-            return false;
+            return manager_data.actionExecuteID == Tables.ID.ActionExecuteCommandTableID.Date;
         }
 
         public override bool GamePlaySelectAction_to_GoodNight05(GamePlayStateManagerData manager_data, GamePlaySelectActionState state)
         {
-            return false;
+            return manager_data.actionExecuteID == Tables.ID.ActionExecuteCommandTableID.Rest;
         }
 
         public override bool GamePlaySelectAction_to_Optin07(GamePlayStateManagerData manager_data, GamePlaySelectActionState state)
         {
-            return false;
+            return manager_data.actionExecuteID == Tables.ID.ActionExecuteCommandTableID.Option;
         }
 
         public override bool GamePlaySelectAction_to_FinishExit11(GamePlayStateManagerData manager_data, GamePlaySelectActionState state)
         {
-            return false;
+            return manager_data.actionExecuteID == Tables.ID.ActionExecuteCommandTableID.Finish;
         }
 
     }

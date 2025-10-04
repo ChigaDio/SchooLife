@@ -14,6 +14,10 @@ namespace GameCore.States
             }).Forget();
         }
         public override void Update(GameCore.States.Managers.GameInitPlayerStateManagerData state_manager_data) { }
-        public override void Exit(GameCore.States.Managers.GameInitPlayerStateManagerData state_manager_data) { }
+        public override void Exit(GameCore.States.Managers.GameInitPlayerStateManagerData state_manager_data)
+        {
+            PlayerInitCanvas.Instance.SetActive(false, PlayerInitCanvas.ParentField.Input);
+            PlayerInitCanvas.Instance.SetActive(false, PlayerInitCanvas.ParentField.Select);
+        }
     }
 }

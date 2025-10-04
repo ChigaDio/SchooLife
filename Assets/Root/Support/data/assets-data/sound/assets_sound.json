@@ -1,6 +1,15 @@
 {
     "groups": {
-        "Game": [],
+        "Game": [
+            {
+                "name": "PlayGame",
+                "desc": "基本BGM",
+                "path": "Assets/Root/RootAssets/Sound/BGM/maou_game_village10.mp3",
+                "absolute_path": "D:\\DoujinGameUnity\\SchooLife\\Assets\\Root\\RootAssets\\Sound\\BGM\\maou_game_village10.mp3",
+                "volume": 1,
+                "type": "BGM"
+            }
+        ],
         "UI": [
             {
                 "name": "PushEnter",
