@@ -8,6 +8,8 @@ public static class DebugLogBridge
 {
     private static DebugLogBridgeRuntime runtime;
 
+    [Conditional("UNITY_EDITOR")]
+    [Conditional("DEVELOPMENT_BUILD")]
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Init()
     {

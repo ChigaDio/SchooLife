@@ -1,0 +1,79 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "ConductSelect",
+      "description": "行動選択",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "CalculationAnimation",
+      "description": "計算処理アニメーション",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -30,
+        "y": 285
+      },
+      "data": {
+        "label": "ConductSelect",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "行動選択",
+        "stateName": "Conduct"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 360,
+        "y": 285
+      },
+      "data": {
+        "label": "CalculationAnimation",
+        "targets": [],
+        "subNodes": [],
+        "description": "計算処理アニメーション",
+        "stateName": "Conduct"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    }
+  ]
+}

@@ -22,5 +22,17 @@
   {
     "id": 6,
     "name": "GameInitPlayer"
+  },
+  {
+    "id": 7,
+    "name": "Conduct"
+  },
+  {
+    "id": 8,
+    "name": "Date"
+  },
+  {
+    "id": 9,
+    "name": "Rest"
   }
 ]

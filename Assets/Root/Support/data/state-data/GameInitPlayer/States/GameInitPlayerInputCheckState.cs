@@ -21,7 +21,7 @@ namespace GameCore.States
 
                 SaveManagerCore.Instance.PlayerProgress.familyName = input.familyInput.text;
                 SaveManagerCore.Instance.PlayerProgress.firstName = input.firstInput.text;
-                SaveManagerCore.Instance.PlayerProgress.personalityTableID = (PersonalityTableID)input.personalityDown.value;
+                SaveManagerCore.Instance.PlayerProgress.personalityTableID = (PersonalityTableID)input.personalityDown.value + 1;
 
                 IsActiveOff();
             });

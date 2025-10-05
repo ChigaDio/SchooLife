@@ -1,0 +1,35 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "RestAnimation",
+      "description": "休憩アニメーション（ここで計算も）",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": 450,
+        "y": 285
+      },
+      "data": {
+        "label": "RestAnimation",
+        "targets": [],
+        "subNodes": [],
+        "description": "休憩アニメーション（ここで計算も）",
+        "stateName": "Rest"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      }
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,79 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "SelectGirl",
+      "description": "選択する女の子",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "Scenario",
+      "description": "シナリオ",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -90,
+        "y": 315
+      },
+      "data": {
+        "label": "SelectGirl",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "選択する女の子",
+        "stateName": "Date"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 330,
+        "y": 315
+      },
+      "data": {
+        "label": "Scenario",
+        "targets": [],
+        "subNodes": [],
+        "description": "シナリオ",
+        "stateName": "Date"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    }
+  ]
+}
