@@ -704,14 +704,14 @@
   },
   "fields": [
     {
-      "type": "float",
+      "description": "\u4e0a\u6607\u500d\u7387",
       "name": "RiseFactor",
-      "description": "\u4e0a\u6607\u500d\u7387"
+      "type": "float"
     },
     {
-      "type": "float",
+      "description": "\u5b9f\u884c\u78ba\u7387",
       "name": "ActionProbability",
-      "description": "\u5b9f\u884c\u78ba\u7387"
+      "type": "float"
     }
   ],
   "name": "PersonalityStatWeights",

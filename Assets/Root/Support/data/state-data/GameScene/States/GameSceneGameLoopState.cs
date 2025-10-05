@@ -3,6 +3,7 @@ using UnityEngine;
 using GameCore.States.Branch;
 using GameCore.States.Control;
 using Cysharp.Threading.Tasks;
+using GameCore.SaveSystem;
 namespace GameCore.States
 {
     public class GameSceneGameLoopState : BaseGameSceneGameLoopState
@@ -14,6 +15,11 @@ namespace GameCore.States
             SceneLoader.LoadSceneAsync(GameScene.GamePlay, action: ()
                 =>
             {
+                var instance = GameSceneCanvas.Instance;
+                var playerData = SaveManagerCore.Instance.PlayerProgress;
+                //‚±‚±‚Å‰Šú‚Ìİ’è
+                instance?.SetUp(playerData);
+
                 isScene = true;
                 control.StartState();
             }).Forget();

@@ -3,5 +3,6 @@ namespace GameCore.Tables {
         None = 0,
         PersonalityStatWeights = 1,
         ItemSelect = 2,
+        PersonalityActionExecuteWeights = 3,
     }
 }
