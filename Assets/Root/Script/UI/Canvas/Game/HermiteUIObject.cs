@@ -17,18 +17,20 @@ public class HermiteUIObject
     private float strength;
     private float duration;
     public bool IsActive => gameObject != null && gameObject.activeSelf;
-
-    public HermiteUIObject(GameObject obj, Vector3 start, Vector3 target, string text)
+    private int num = 0;
+    public int GetNum {  get { return num; } }
+    public HermiteUIObject(GameObject obj, Vector3 start, Vector3 target,int valueNumt)
     {
         gameObject = obj;
         rectTransform = obj.GetComponent<RectTransform>();
         textMesh = obj.GetComponentInChildren<TextMeshProUGUI>();
 
+        num = valueNumt;
         startPos = start;
         targetPos = target;
         rectTransform.anchoredPosition3D = start;
         if (textMesh != null)
-            textMesh.text = text;
+            textMesh.text = num.ToString();
 
         // ï˚å¸Ç∆êßå‰ì_ê›íË
         var dir = (target - start).normalized;

@@ -45,7 +45,7 @@ namespace GameCore.SaveSystem
         /// <summary>
         /// Œ»İ‚Ìƒ^[ƒ“”
         /// </summary>
-        public uint nowTurn = 30;
+        public TurnTableID nowTurn = TurnTableID.Turn_31;
 
         public int health = 0;
 
@@ -54,6 +54,32 @@ namespace GameCore.SaveSystem
         public bool isPlayStart = false;
 
         public ItemListData itemListData;
+
+        public int PlaterStatusNum(CharacterStatID id)
+        {
+            return id switch
+            {
+                CharacterStatID.None => 0,
+                CharacterStatID.Study => studyNum,
+                CharacterStatID.Appearance => appearanceNum,
+                CharacterStatID.Stamina => staminaNum,
+                _ => 0,
+
+            };
+        }
+
+        public void AddPlayerStatusNum(CharacterStatID id,int add)
+        {
+            _ = id switch
+            {
+                CharacterStatID.None => 0,
+                CharacterStatID.Study => studyNum += add,
+                CharacterStatID.Appearance => appearanceNum += add,
+                CharacterStatID.Stamina => staminaNum += add,
+                _ => 0,
+
+            };
+        }
 
         public PlayerData()
         {
