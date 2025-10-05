@@ -31,7 +31,7 @@ public class HermiteUIManager : MonoBehaviour
     public async UniTask<HermiteUIObject[]> CreateAsync(
         Vector3 start,
         Vector3 target,
-        string[] text,
+        int[] text,
         float duration = 1.5f,
         Action<HermiteUIObject> onEachArrived = null,
         Action onAllCompleted = null)

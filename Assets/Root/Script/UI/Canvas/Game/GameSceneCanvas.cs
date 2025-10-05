@@ -9,9 +9,86 @@ using static GameSceneCanvas;
 using Cysharp.Threading.Tasks;
 using UnityEngine.Events;
 using Unity.VisualScripting;
+using System.Threading;
+using GameCore.SaveSystem;
 
 public class GameSceneCanvas : BaseSingleton<GameSceneCanvas>
 {
+    [Serializable]
+    public class BarView
+    {
+        [SerializeField]
+        private Image image;
+        public readonly float CHANGE_TIME = 1.0f;
+
+
+        public void SetUp()
+        {
+            if (!image.Equals(null)) return;
+
+        }
+
+
+
+        public void SetFillAmout(float value)
+        {
+            if(image.Equals(null)) return;
+
+            value = Mathf.Clamp(value, 0.0f, 1.0f);
+            image.fillAmount = value;
+        }
+    }
+
+
+    [Serializable]
+    public class TopText
+    {
+        [SerializeField]
+        private TMPro.TextMeshProUGUI nameText;
+
+        [SerializeField]
+        private TMPro.TextMeshProUGUI turnText;
+
+        public void SetNameText(string value)
+        {
+            if (nameText.Equals(null)) return;
+
+            nameText.text = $"名前: {value}";
+        }
+
+        public void SetTurnText(TurnTableID turnID)
+        {
+            if(turnText.Equals(null)) return;
+            turnText.text = $"{(int)turnID - 1}ターン";
+        }
+    }
+    [Serializable]
+    public class TopViewObject
+    {
+        [SerializeField]
+        private TopText topText = new TopText();
+
+        [SerializeField]
+        private BarView hpBarView = new BarView();
+
+        public void SetUp()
+        {
+            hpBarView.SetUp();
+        }
+
+
+
+        public void SetNameText(string value)
+        {
+            topText.SetNameText(value);
+        }
+
+        public void SetTurnText(TurnTableID turnID)
+        {
+            topText.SetTurnText(turnID);
+        }
+    }
+
     [Serializable]
     public class ViewObject<TID>                
         where TID : struct, Enum
@@ -21,7 +98,8 @@ public class GameSceneCanvas : BaseSingleton<GameSceneCanvas>
 
         private UnityAction action;
 
-        private TMPro.TextMeshPro textMeshPro;
+        [SerializeField]
+        private TMPro.TextMeshProUGUI textMeshPro;
 
         [SerializeField]
         protected GameObject gameObject;
@@ -45,7 +123,7 @@ public class GameSceneCanvas : BaseSingleton<GameSceneCanvas>
         public virtual void SetUp()
         {
             if (gameObject == null) return;
-            textMeshPro = gameObject?.GetComponentInChildren<TMPro.TextMeshPro>();
+            if(textMeshPro == null)textMeshPro = gameObject?.GetComponentInChildren<TMPro.TextMeshProUGUI>();
             rectTransform = gameObject.GetComponent<RectTransform>();
             button = gameObject?.GetComponentInChildren<Button>();
 
@@ -286,7 +364,7 @@ public class GameSceneCanvas : BaseSingleton<GameSceneCanvas>
     public void CreatehHermiteAsync(
         Vector3 start,
         Vector3 target,
-        string[] text,
+        int[] text,
         float duration = 1.5f,
         Action<HermiteUIObject> onEachArrived = null,
         Action onAllCompleted = null)
@@ -294,16 +372,40 @@ public class GameSceneCanvas : BaseSingleton<GameSceneCanvas>
         hermiteUIManager?.CreateAsync(start, target, text, duration, onEachArrived, onAllCompleted).Forget();
     }
 
+    /// <summary>
+    /// top部分のUI
+    /// </summary>
+    [SerializeField]
+    private TopViewObject topViewObject = new TopViewObject();
+    public TopViewObject GetTopViewObject {  get { return topViewObject; } }
+
+    [SerializeField]
+    private BarView timeLimitBarView = new BarView();
+    public BarView TimeLimitBarView { get { return timeLimitBarView; } }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
     {
+        DebugLogBridge.Log("Debug Start----");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SetUp(PlayerData playerData)
+    {
+        //名前
+        topViewObject.SetNameText(playerData.familyName + " " + playerData.firstName);
+        topViewObject.SetTurnText(playerData.nowTurn);
+
+        //ステータス
+        foreach (var item in viewStatusList)
+        {
+            item.SetText(playerData.PlaterStatusNum(item.GetID()).ToString());
+        }
     }
 
 

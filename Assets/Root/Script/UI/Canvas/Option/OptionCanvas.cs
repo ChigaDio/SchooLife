@@ -18,7 +18,11 @@ public class OptionCanvas : BaseSingleton<OptionCanvas>
     [SerializeField] private RectTransform parent = null;
     public void OnParentActive() { if (parent == null) return; parent.gameObject.SetActive(true); }
     public void OffParentActive() { if (parent == null) return;  parent.gameObject.SetActive(false); }
-
+    public bool GetActive()
+    {
+        if (parent == null) return false;
+        return parent.gameObject.activeSelf;
+    }
     public enum OptionSlider
     {
         BGM,
@@ -56,6 +60,7 @@ public class OptionCanvas : BaseSingleton<OptionCanvas>
     {
         base.AwakeSingleton();
         destroyToken = this.GetCancellationTokenOnDestroy();
+        DontDestroyOnLoad(this);
 
         SetSliderValue(OptionSlider.BGM, SaveManagerCore.instance.SystemSettings.bgmVolume);
         SetSliderValue(OptionSlider.SE, SaveManagerCore.instance.SystemSettings.seVolume);
