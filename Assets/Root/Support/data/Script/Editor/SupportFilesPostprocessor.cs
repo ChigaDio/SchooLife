@@ -22,7 +22,8 @@ public class SupportFilesPostprocessor : IPostprocessBuildWithReport
             (SupportFiles.ALL_GAMEOBJECT_BIN, Path.Combine(SupportFiles.ASSETS_FOLDER, SupportFiles.GAMEOBJECT_FOLDER)),
             (SupportFiles.ALL_TEXTURE_BIN, Path.Combine(SupportFiles.ASSETS_FOLDER, SupportFiles.TEXTURE_FOLDER)),
             (SupportFiles.ALL_MATRIX_ID_BIN, SupportFiles.MATRIX_DATA_ID_FOLDER),
-            (SupportFiles.ALL_ID_BIN, SupportFiles.ID_FOLDER)
+            (SupportFiles.ALL_ID_BIN, SupportFiles.ID_FOLDER),
+            (SupportFiles.ALL_SCENARIO_EVENTS_BIN,Path.Combine(SupportFiles.SCENARIO_FOLDER,SupportFiles.SCENARIO_EVEMT_FOLDER))
         };
 
         foreach (var (filePath, targetFolder) in allFiles)

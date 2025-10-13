@@ -6,18 +6,10 @@ using UnityEngine;
 
 namespace GameCore.Scenario
 {
-    public class BaseScenarioRoleData
+    public abstract class BaseScenarioRoleData
     {
-        public ScenarioRoleID RoleID { get; private set; }
-        public int ScenarioGroupID { get; private set; }
-        public int ScenarioSubGroupID { get; private set; }
-        public int ScenarioSeekPos { get; set; } = -1;
+        public ScenarioRoleID RoleID { get; protected set; }
 
-        public virtual void ReadBinary(BinaryReader reader)
-        {
-            RoleID = (ScenarioRoleID)reader.ReadInt32();
-            ScenarioGroupID = reader.ReadInt32();
-            ScenarioSubGroupID = reader.ReadInt32();
-        }
+        public abstract void ReadBinary(BinaryReader reader);
     }
 }

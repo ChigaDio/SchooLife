@@ -1,0 +1,210 @@
+{
+  "id": "Z-99999",
+  "name": "Test",
+  "description": "テスト",
+  "subEvents": [
+    {
+      "subId": 1,
+      "name": "Sub01"
+    }
+  ],
+  "subgroups": {
+    "1": {
+      "nodes": [
+        {
+          "id": "1",
+          "type": "customGroup",
+          "position": {
+            "x": 177.68319920401333,
+            "y": 378.93761556595587
+          },
+          "data": {
+            "label": "1",
+            "description": "1",
+            "roles": [],
+            "subgroups": {
+              "1": {
+                "nodes": [
+                  {
+                    "id": "1",
+                    "type": "subGroupNode",
+                    "position": {
+                      "x": -657.0998299860303,
+                      "y": 309.22783211421023
+                    },
+                    "data": {
+                      "label": "Group: 1 / Sub: 1",
+                      "description": "1",
+                      "roles": [
+                        {
+                          "branchType": "General",
+                          "data": [
+                            {
+                              "name": "text",
+                              "value": "これはテストだよ~"
+                            },
+                            {
+                              "name": "name",
+                              "value": "Void"
+                            }
+                          ],
+                          "id": 1,
+                          "name": "TalkText",
+                          "uniqueId": "1760240005182"
+                        }
+                      ],
+                      "subgroups": {},
+                      "isSubGroup": true
+                    },
+                    "draggable": true
+                  },
+                  {
+                    "id": "2",
+                    "type": "subGroupNode",
+                    "position": {
+                      "x": -335.24286856491926,
+                      "y": 311.9591211893431
+                    },
+                    "data": {
+                      "label": "Group: 1 / Sub: 2",
+                      "description": "2",
+                      "roles": [
+                        {
+                          "branchType": "General",
+                          "data": [
+                            {
+                              "name": "text",
+                              "value": "まだまだ改良点あるけど、"
+                            },
+                            {
+                              "name": "name",
+                              "value": "void"
+                            }
+                          ],
+                          "id": 1,
+                          "name": "TalkText",
+                          "uniqueId": "1760247178044"
+                        }
+                      ],
+                      "subgroups": {},
+                      "isSubGroup": true
+                    },
+                    "draggable": true
+                  },
+                  {
+                    "id": "3",
+                    "type": "subGroupNode",
+                    "position": {
+                      "x": -31.765110889641413,
+                      "y": 313.96904550826935
+                    },
+                    "data": {
+                      "label": "Group: 1 / Sub: 3",
+                      "description": "3",
+                      "roles": [
+                        {
+                          "branchType": "General",
+                          "data": [
+                            {
+                              "name": "text",
+                              "value": "これから頑張ります"
+                            },
+                            {
+                              "name": "name",
+                              "value": "作者"
+                            }
+                          ],
+                          "id": 1,
+                          "name": "TalkText",
+                          "uniqueId": "1760247300240"
+                        }
+                      ],
+                      "subgroups": {},
+                      "isSubGroup": true
+                    },
+                    "draggable": true
+                  },
+                  {
+                    "id": "4",
+                    "type": "subGroupNode",
+                    "position": {
+                      "x": 292.3581386242249,
+                      "y": 301.38145747626686
+                    },
+                    "data": {
+                      "label": "Group: 1 / Sub: 4",
+                      "description": "4",
+                      "roles": [
+                        {
+                          "uniqueId": "1760385004156",
+                          "id": 1,
+                          "name": "TalkText",
+                          "branchType": "General",
+                          "data": [
+                            {
+                              "name": "text",
+                              "value": "録画中~~~"
+                            },
+                            {
+                              "name": "name",
+                              "value": "作者"
+                            }
+                          ]
+                        }
+                      ],
+                      "subgroups": {},
+                      "isSubGroup": true
+                    },
+                    "draggable": true
+                  }
+                ],
+                "edges": [
+                  {
+                    "animated": true,
+                    "source": "1",
+                    "sourceHandle": null,
+                    "style": {
+                      "stroke": "cyan",
+                      "strokeDasharray": "5,5",
+                      "strokeWidth": 3
+                    },
+                    "target": "2",
+                    "targetHandle": null
+                  },
+                  {
+                    "animated": true,
+                    "source": "2",
+                    "sourceHandle": null,
+                    "style": {
+                      "stroke": "cyan",
+                      "strokeDasharray": "5,5",
+                      "strokeWidth": 3
+                    },
+                    "target": "3",
+                    "targetHandle": null
+                  },
+                  {
+                    "source": "3",
+                    "sourceHandle": null,
+                    "target": "4",
+                    "targetHandle": null,
+                    "id": "3-4",
+                    "animated": true,
+                    "style": {
+                      "strokeDasharray": "5,5",
+                      "stroke": "cyan",
+                      "strokeWidth": 3
+                    }
+                  }
+                ]
+              }
+            },
+            "isSubGroup": false
+          },
+          "draggable": true
+        }
+      ],
+      "edges": []
+    }
+  }
+}

@@ -9,6 +9,7 @@ namespace GameCore.Enums
         ActionExecuteCommand = 4,
         TurnEvent = 5,
         Turn = 6,
-        Max = 7
+        ScenarioEvent = 7,
+        Max = 8
     }
 }

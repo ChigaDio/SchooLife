@@ -1,0 +1,29 @@
+{
+  "columns": [
+    {
+      "name": "eventID",
+      "type": "string"
+    },
+    {
+      "name": "subID",
+      "type": "string"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Test_Sub01",
+      "description": "テスト_Sub01",
+      "data": {
+        "eventID": {
+          "value": "Z-99999",
+          "type": "string"
+        },
+        "subID": {
+          "value": "Sub01",
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

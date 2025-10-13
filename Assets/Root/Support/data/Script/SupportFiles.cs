@@ -35,6 +35,11 @@ namespace GameCore
         public const string ALL_TEXTURE_BIN_FILE = "texture_data.bin";
         public const string ALL_GAMEOBJECT_BIN_FILE = "gameobject_data.bin";
 
+        //Scenario
+        public const string SCENARIO_FOLDER = "scenario-data";
+        public const string SCENARIO_EVEMT_FOLDER = "scenario-event-data";
+        public const string ALL_SCENARIO_EVENT_BIN_FILE = "all_events.bin";
+
         // キャッシュ（最初に解決したパスを保持）
         public static string s_cachedSupportDataPath = null;
 
@@ -107,6 +112,7 @@ namespace GameCore
         public static string ALL_GAMEOBJECT_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ASSETS_FOLDER, GAMEOBJECT_FOLDER, ALL_GAMEOBJECT_BIN_FILE)).Replace("\\", "/");
         public static string ALL_MATRIX_ID_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, MATRIX_DATA_ID_FOLDER, MATRIX_ID_BIN_FILE)).Replace("\\", "/");
         public static string ALL_ID_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, ID_FOLDER, ID_BIN_FILE)).Replace("\\", "/");
+        public static string ALL_SCENARIO_EVENTS_BIN => Path.GetFullPath(Path.Combine(SupportDataPath, SCENARIO_FOLDER,SCENARIO_EVEMT_FOLDER, ALL_SCENARIO_EVENT_BIN_FILE)).Replace("\\", "/");
 
 #if UNITY_EDITOR
         // Editor専用：AssetDatabaseで探して "Assets/..." を返す（失敗すれば null）

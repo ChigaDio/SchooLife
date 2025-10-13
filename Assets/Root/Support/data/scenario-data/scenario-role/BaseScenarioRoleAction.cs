@@ -13,9 +13,9 @@ namespace GameCore.Scenario
 
         }
 
-        public override  void OnInitialize()
+        public override  void OnInitialize(ScenarioExecuteData executeData)
         {
-            base.OnInitialize();
+            base.OnInitialize(executeData);
         }
 
 
