@@ -4,6 +4,3 @@
 [submodule "Assets/Root/Support/SupportUnityEditorChigadio"]
 	path = Assets/Root/Support/SupportUnityEditorChigadio
 	url = https://github.com/ChigaDio/SupportUnityEditorChigadio.git
-[submodule "Assets/Root/Support/AdressableSupportLib"]
-	path = Assets/Root/Support/AdressableSupportLib
-	url = https://github.com/ChigaDio/AdressableSupportLib.git
